@@ -9,10 +9,13 @@ Select "Free" option
 Create user
 Add Username and password
 Choose region for AWS
-IP Access 0.0.0.0/0 to allow all Ips
 
 Connect: Connect your application
-Copy the application code to index.js
+Copy the credentials from application code to .env in root directory
+MONGODB_USERNAME="USERNAME"
+MONGODB_PASSWORD="PASSWORD"
+
+mongoose.connect URL should look like this:
 const MONGODB = "mongodb+srv://USERNAME:PASSWORD@cluster0.ve9hms1.mongodb.net/?retryWrites=true&w=majority";
 
 
